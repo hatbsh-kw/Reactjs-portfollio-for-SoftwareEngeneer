@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior:smooth;
+  }
+  
+body{
+    font-family: 'Montserrat','BioRhyme',calibri;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(11, 78, 97, 0.703);
+}
+
+*{
+    box-sizing: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+.logo{
+    font-family: 'BioRhyme';
+    color: black;
+    font-size: large;
+
+}
+.logo:hover{
+    transform: scale(1.3);
+    box-shadow: 0 0 25px greenyellow;
+}
+.main{
+    width: 100%;
+    height: 768px;
+    position: relative;
+    background: no-repeat;
+    }
+.main .img{
+    height: 700px;
+     margin-left: 900px;
+   }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgb(43, 42, 42);
+    position: fixed;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(209, 246, 242);
+
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    font-family: calibri;
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: 0.4s ease-in-out;
+}
+.Hey{
+    font-family: calibri;
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+}
+
+nav ul li a:hover{
+    background-color: rgb(151, 135, 11);
+    color: white;
+    box-shadow: 5px 10px 30px rgb(121, 232, 24);
+    border-bottom: 4px solid rgb(139, 4, 198);
+}
+
+nav .menu-btn,.menu-icon{
+    display: none;
+}
+
+.name{
+    font-family: 'Montserrat';
+    width: 600px;
+    position: absolute;
+    left: 16%;
+    top: 50%;
+    transform: translate(-20%,-50%);
+}
+.name span{
+    color: yellow;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.name .details{
+    color:rgb(255, 255, 255);
+}
+.name .heading{
+    color:rgb(255, 255, 255);
+}
+.name h1{
+    font-family: 'Montserrat';
+    font-size: 46px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: antiquewhite;
+}
+.btn-1{
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: yellow;
+     box-shadow: 5px 10px 30px black;
+     border-radius: 10px;
+     color: black;
+}
+.btn-2{
+    margin-top: 3px;
+    font-size: 14px;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background:transparent;
+     border: 2px solid #fff;
+     margin-left: 20xpx;
+     border-radius: 10px;
+     color: #fff;
+}
+.btn-1:hover{
+    background-color: rgb(221, 221, 152);
+    transition: all ease 0.4s;
+    color: black;
+}
+.btn-2:hover{
+    background-color: rgb(222, 222, 131);
+    transition: all ease 0.4s;
+    color: black;
+}
+
+.arrow{
+    align-self: end;
+    width: 50%;
+    height: 20%;
+    margin-bottom: 8em;
+    position: absolute;
+      bottom:0px;
+      left: -3%;
+      border-right: 2px solid  #0b0b0b;
+    animation: arrow-animation ease 1.5s;
+
+}
+.arrow::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0px 11px;
+    border-color: #6707b6 transparent transparent transparent;
+    right: -0.7em;
+    bottom: -2px;
+}
+@keyframes arrow-animation{
+    0%{
+        bottom: 70px;
+        opacity: 0.2;
+    }
+    100%{
+        bottom: 5px;
+        opacity: 1;
+    }
+}
+.about{
+	width:100%;
+	height: 100vh;
+	background-color:#ffffff;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+	position: relative;
+}
+.about-text{
+	width: 50%;
+}
+.about-text h2{
+	font-size: 2rem;
+	color:#03630b;
+	font-weight: 400;
+}
+.about-text h2{
+	margin: 0px;
+	padding: 0px;
+}
+.about-text p{
+    font-family:'Times New Roman', Times, serif;
+	font-size: 1.2rem;
+	color:#030303;
+	
+}
+.about-text button{
+	width: 140px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+    outline: none;
+    color: #ffffff;
+	background-color:#8f7d0d;
+}
+.about-text button:hover{
+	background-color: #d0ff00;
+    transition: all ease 0.3s;
+    color: #000266;
+}
+.about-model img{
+    height: 500px;
+    margin-bottom: 90px;
+}
+.about-text span{
+    color: aqua;
+}
+
+
+
+/* General styles for the Contact component */
+.contacts {
+  background-color: rgba(11, 78, 97, 0.703); /* Background color */
+    color: #ffffff; /* Text color */
+    padding: 1rem; /* Padding for compactness */
+    min-height: 50vh; /* Ensure it takes at least the full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .contact.cont {
+    display: flex; /* Use flexbox for left-right layout */
+    justify-content: space-between; /* Space out content and form */
+    max-width: 1200px; /* Limit max width */
+    width: 80%; /* Ensure responsiveness */
+    gap: 2rem; /* Space between the content and form sections */
+  }
+  
+  .contact .heading {
+    text-align: center;
+    font-size: 3rem; /* Reduced font size */
+    margin-bottom: 1rem;
+    padding-top: 100px;
+    padding-right:10px;
+    color: var(--yellow);
+    text-transform: uppercase;
+  }
+  
+  .contact .heading span {
+    color: #0d0d0d;
+  }
+  
+  /* Row styles for content and form sections */
+  .contact .row {
+    display: flex;
+    justify-content: space-between; /* Ensure content and form are aligned side by side */
+    width: 90%;
+    gap: 2rem; /* Gap between content and form sections */
+  }
+  
+  /* Content section styles */
+  .contact .row .content {
+    flex: 10 1 15%;   /* Take up 45% of the width */
+    padding: 1rem; /* Padding for content */
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgb(229, 214, 214); /* Lighter shadow */
+  }
+  
+  .contact .row .content .title {
+    text-transform: uppercase;
+    color: var(--yellow);
+    font-size: 1.7rem; /* Font size for title */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* Font size for info */
+    color: #ccc;
+    margin: 0.9rem 2;
+  }
+  
+  .contact .row .content .info h3 i {
+    margin-right: 0.5rem; /* Icon spacing */
+    color: var(--yellow);
+  }
+  
+  /* Form styles */
+  .contact .row form {
+    flex: 1 1 45%; /* Take up 45% of the width */
+    padding: 0.5rem; /* Padding for the form */
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 2px 14px rgb(255, 252, 252);
+  }
+  .contact .row input,textarea{
+   max-width: 85%;
+   height:0.3px;
+  }
+  
+  .contact .row form .box {
+    padding: 0.5rem; /* Padding for input fields */
+    margin: 0.5rem 0;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .contact .row form .box:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--yellow);
+  }
+  
+  .contact .row form .box::placeholder {
+    color: #aaa;
+    text-transform: capitalize;
+  }
+  
+  .contact .row form .message {
+    height: 7rem; /* Adjusted for form text area */
+    resize: none;
+  }
+  
+  .contact .row form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a28308;
+    color: #222;
+    margin-left: 9rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ 
+  }
+  
+  .contact .row form button:hover {
+    background-color: var(--yellow);
+  }
+  
+  .contact .row form button i {
+    margin-left: 0.5rem;
+  }
+  /* Variables */
+  :root {
+    --yellow: #ffcc00; /* Yellow color variable */
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .contact .row {
+      flex-direction: column; /* Stack content and form vertically on smaller screens */
+      gap: 1rem;
+    }
+  
+    .contact .row .content,
+    .contact .row form {
+      flex: 1 1 100%; /* Allow full width for each section */
+      margin: 0;
+    }
+  }
+  
+  
+  /* FOOTER SECTION */
+
+.footer {
+  background-color: rgba(11, 78, 97, 0.703); /* Dark background */
+  color: #fff; /* Light text for contrast */
+  padding: 2rem 1rem; /* Spacing for content */
+  text-align: center; /* Center content alignment */
+  border:white dashed;
+}
+
+.footer .nav {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: center; /* Center align items */
+  gap: 1.5rem; /* Space between items */
+}
+
+.footer .nav ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center; /* Center align navigation items */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  gap: 1rem; /* Space between navigation links */
+}
+
+.footer .nav ul li {
+  display: inline; /* Inline items for horizontal navigation */
+}
+
+.footer .nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #ffcc00; /* Accent color for links */
+  font-size: 1rem; /* Font size for links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer .nav ul li a:hover {
+  color: #f1c40f; /* Lighter yellow on hover */
+}
+
+.footer p {
+  margin-top: 1.5rem; /* Space above copyright text */
+  font-size: 0.9rem; /* Smaller font size for copyright text */
+  color: #ccc; /* Lighter gray for copyright text */
+}
+
+/* Responsive styles for footer */
+@media (max-width: 768px) {
+  .footer .nav ul {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    gap: 1rem; /* Adjust spacing */
+  }
+}
