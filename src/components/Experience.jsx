@@ -1,5 +1,6 @@
 import React from 'react';
-import checkmark from'../images/checkmark.png'
+import checkmark from '../images/checkmark.png';
+
 const Experience = () => {
   const frontendSkills = [
     { name: 'HTML', level: 'Experienced' },
@@ -9,19 +10,19 @@ const Experience = () => {
   ];
 
   const backendSkills = [
-    { name: 'Node JS', level: 'basic' },
-    { name: 'PHP', level: 'basic' },
+    { name: 'Node JS', level: 'Start' },
+    { name: 'PHP', level: 'Basic' },
     { name: 'Git', level: 'Intermediate' },
   ];
-   
-  const vedioEditingSkils=[
-    {name:'Adobe premier pro',level:'basic'},
-    {name:'Capcut',level:'basic'},
-    {name:'Canva',level:'basic'},
-    {name:'Thumbnail Desogn',level:'basic'},
-    {name:'Content Creature',level:''}
 
-  ]
+  const videoEditingSkills = [
+    { name: 'Adobe Premiere Pro', level: 'Basic' },
+    { name: 'Capcut', level: 'Basic' },
+    { name: 'Canva', level: 'Basic' },
+    { name: 'Thumbnail Design', level: 'Basic' },
+    { name: 'Content Creation', level: 'Basic' },
+  ];
+
   const SkillArticle = ({ skill }) => (
     <article>
       <img src={checkmark} alt="Experience icon" className="icon" />
@@ -54,9 +55,9 @@ const Experience = () => {
             </div>
           </div>
           <div className="details-container">
-            <h2 className="experience-sub-title">Vedio Editing</h2>
+            <h2 className="experience-sub-title">Video Editing</h2>
             <div className="article-container">
-              {vedioEditingSkils.map((skill, index) => (
+              {videoEditingSkills.map((skill, index) => (
                 <SkillArticle key={index} skill={skill} />
               ))}
             </div>

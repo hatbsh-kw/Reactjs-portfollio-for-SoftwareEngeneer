@@ -38,10 +38,30 @@ function Contact() {
                 <i className="fas fa-phone"></i> +251955139440
               </h3>
               <h3>
-                <i className="fas fa-envelope"></i> +0703184541
+                <i className="fas fa-phone"></i> +0703184541
               </h3>
               <h3>
                 <i className="fas fa-map-marker-alt"></i> Africa, Ethiopia...
+              </h3>
+              <h3>
+                <i className="fab fa-github"></i>{' '}
+                <a
+                  href="https://github.com/hatbsh-kw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Profile
+                </a>
+              </h3>
+              <h3>
+                <i className="fab fa-linkedin"></i>{' '}
+                <a
+                  href="https://www.linkedin.com/in/habtamu-kebede-840952319/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn Profile
+                </a>
               </h3>
             </div>
           </div>
