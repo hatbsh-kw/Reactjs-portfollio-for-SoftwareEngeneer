@@ -9,7 +9,11 @@ body{
     font-family: 'Montserrat','BioRhyme',calibri;
     margin: 0;
     padding: 0;
-    background-color: rgba(11, 78, 97, 0.703);
+  	background-color: rgba(244, 253, 255, 0.949);
+
+
+
+
 }
 
 *{
@@ -104,21 +108,23 @@ nav .menu-btn,.menu-icon{
     transform: translate(-20%,-50%);
 }
 .name span{
-    color: yellow;
+    color: rgb(136, 136, 19);
     border-bottom: 2px solid rgb(0, 0, 0);
 }
 .name .details{
-    color:rgb(255, 255, 255);
+    color:rgb(17, 17, 17);
+    font-weight: 600;
 }
 .name .heading{
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-weight: 800;
 }
 .name h1{
     font-family: 'Montserrat';
     font-size: 46px;
     margin: 0px;
     letter-spacing: 3px;
-    color: antiquewhite;
+    color: rgb(106, 71, 25);
 }
 .btn-1{
     width: 110px;
@@ -126,10 +132,11 @@ nav .menu-btn,.menu-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-     background-color: yellow;
+    color: rgb(97, 65, 24);
      box-shadow: 5px 10px 30px black;
      border-radius: 10px;
      color: black;
+     border: #000000;
 }
 .btn-2{
     margin-top: 3px;
@@ -140,10 +147,12 @@ nav .menu-btn,.menu-icon{
     justify-content: center;
     align-items: center;
      background:transparent;
+     background-color: rgb(106, 71, 25);
      border: 2px solid #fff;
      margin-left: 20xpx;
      border-radius: 10px;
-     color: #fff;
+     color: #ffffff;
+    
 }
 .btn-1:hover{
     background-color: rgb(221, 221, 152);
@@ -192,13 +201,14 @@ nav .menu-btn,.menu-icon{
 .about{
 	width:100%;
 	height: 100vh;
-	background-color:#ffffff;
+	background-color: rgba(244, 253, 255, 0.949);
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 50px 5% 0px 5%;
 	position: relative;
+  border: #000000 solid;
 }
 .about-text{
 	width: 50%;
@@ -240,17 +250,125 @@ nav .menu-btn,.menu-icon{
     color: aqua;
 }
 
+/* Experience Section */
+.experience {
+ 
+  background-color: rgba(244, 253, 255, 0.949);
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 2px;
+}
+
+
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  flex-direction:column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.details-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 400px;
+  text-align: left;
+}
+
+.experience-sub-title {
+  font-size: 1.5rem;
+  color:rgb(166, 166, 11);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #88d820;
+  padding-bottom: 0.5rem;
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+  gap: 1rem;
+}
+
+
+article {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+article div h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+article div p {
+  font-size: 1rem;
+  color: #777;
+  margin: 0;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .details-container {
+    width: 100%;
+  }
+  .article-container {
+    grid-template-columns: 1fr; /* Stacks skills into a single column on smaller screens */
+  }
+  .experience-details-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.2rem;
+  }
+
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+}
 
 
 /* General styles for the Contact component */
 .contacts {
-  background-color: rgba(11, 78, 97, 0.703); /* Background color */
+  background-color: rgba(244, 253, 255, 0.949); /* Background color */
     color: #ffffff; /* Text color */
     padding: 1rem; /* Padding for compactness */
-    min-height: 50vh; /* Ensure it takes at least the full viewport height */
+    min-height: 80vh; /* Ensure it takes at least the full viewport height */
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+    border: solid black;
   }
   
   .contact.cont {
@@ -400,11 +518,11 @@ nav .menu-btn,.menu-icon{
   /* FOOTER SECTION */
 
 .footer {
-  background-color: rgba(11, 78, 97, 0.703); /* Dark background */
+  background-color: rgba(244, 253, 255, 0.949); /* Dark background */
   color: #fff; /* Light text for contrast */
   padding: 2rem 1rem; /* Spacing for content */
   text-align: center; /* Center content alignment */
-  border:white dashed;
+ 
 }
 
 .footer .nav {
@@ -430,19 +548,19 @@ nav .menu-btn,.menu-icon{
 
 .footer .nav ul li a {
   text-decoration: none; /* Remove underline from links */
-  color: #ffcc00; /* Accent color for links */
+  color: #000000; /* Accent color for links */
   font-size: 1rem; /* Font size for links */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .footer .nav ul li a:hover {
-  color: #f1c40f; /* Lighter yellow on hover */
+ background-color: #f1c40f; /* Lighter yellow on hover */
 }
 
 .footer p {
   margin-top: 1.5rem; /* Space above copyright text */
   font-size: 0.9rem; /* Smaller font size for copyright text */
-  color: #ccc; /* Lighter gray for copyright text */
+  color: #000000; /* Lighter gray for copyright text */
 }
 
 /* Responsive styles for footer */

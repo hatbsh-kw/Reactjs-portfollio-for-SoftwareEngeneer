@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import image1 from '../images/Photoroom-20250119_160434.png';
+import image1 from '../images/Photoroom-20250119_160456.png';
 
 function Header() {
   return (
