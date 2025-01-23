@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import image1 from '../images/Photoroom-20250119_160434.png';
-import cvFile from '../images/UpdatedCV.pdf'; // Update the path accordingly
+
 
 function Header() {
   return (
@@ -20,14 +20,7 @@ function Header() {
         </p>
         <div className='header-btns'>
           <a href="#" className='btn-1'>Hire Me</a>
-          <a 
-            href={cvFile} // Use the imported CV file
-            className="btn-2" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            Open CV
-          </a>
+          
         </div>
       </div>
       <div className="arrow"></div>

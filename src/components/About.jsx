@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import heroImage from '../images/Photoroom-20250119_160556.png'; // Import hero image
+import cvFile from '../images/UpdatedCV.pdf'; // Import your CV file
 
 function About() {
   const [showFullDetails, setShowFullDetails] = useState(false); // State to toggle full details
@@ -27,16 +28,25 @@ function About() {
         {showFullDetails && (
           <p>
             I also have a keen interest in video editing and content creation.
-             I have developed proficiency in using various tools such as Adobe Premiere Pro, CapCut, and Canva, 
-             all of which I use to create and edit engaging content. While I’m still at a basic level with these tools,
-              I’ve gained hands-on experience in areas like thumbnail design and video editing
-            I thrive on solving problems and collaborating effectively. I am eager to bring my technical skills 
+            I have developed proficiency in using various tools such as Adobe Premiere Pro, CapCut, and Canva,
+            all of which I use to create and edit engaging content. While I’m still at a basic level with these tools,
+            I’ve gained hands-on experience in areas like thumbnail design and video editing.
+            I thrive on solving problems and collaborating effectively. I am eager to bring my technical skills
             and innovative mindset to real-world projects.
           </p>
         )}
         <button onClick={handleToggleDetails}>
           {showFullDetails ? 'Show Less Details' : 'View More Details'}
         </button>
+        <a 
+  href={cvFile} 
+  className="open-cv-btn" // Use the new class here
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  Open CV
+</a>
+
       </div>
     </div>
   );
