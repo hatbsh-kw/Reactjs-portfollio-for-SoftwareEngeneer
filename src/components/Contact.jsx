@@ -31,7 +31,7 @@ function Contact() {
           <div className="content">
             <h3 className="title">Contact Info</h3>
             <div className="info">
-              <h3>
+              <h3 className='email'>
                 <i className="fas fa-envelope"></i> kebedehabtamu743@gmail.com
               </h3>
               <h3>
